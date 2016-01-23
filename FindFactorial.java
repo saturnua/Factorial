@@ -1,12 +1,16 @@
 
 public class FindFactorial {
-	int result = 1;
+	
 	
 	public int findFactorial(int find){
-		for(int i= 1; i<=find; i++){
-			result = result * i;
+		int result = 0;
+		if(find ==1){
+			return 1;
 		}
+		result = findFactorial(find - 1)* find;
 		
 		return result;
 	}
+	
+	
 }

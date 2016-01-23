@@ -16,6 +16,6 @@ public class Main {
 			}
 			
 			FindFactorial find = new FindFactorial();
-			System.out.println("Factorial " +  factInput + " is " + find.findFactorial(factInput));
+			System.out.println("Factorial " +  factInput + " is " + find.findFactorial(factInput) + " " );
 		}
 }
