@@ -8,14 +8,18 @@ public class Main {
 
 		int factInput = 0;
 			
-			BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-			try{
-				factInput = Integer.parseInt(in.readLine());
-			}catch (IOException e){
-				System.out.println("Problem reading");
-			}
+		//	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		//	try{
+		//		factInput = Integer.parseInt(in.readLine());
+		//	}catch (IOException e){
+			//	System.out.println("Problem reading");
+		//	}
 			
-			FindFactorial find = new FindFactorial();
-			System.out.println("Factorial " +  factInput + " is " + find.findFactorial(factInput) + " " );
+			FindFactorial findFac = new FindFactorial();
+		//	System.out.println("Factorial " +  factInput + " is " + findFac.findFactorial(factInput) + " " );
+			
+			FindFibonachi finedFib = new FindFibonachi();
+			//System.out.println(finedFib.findFibonachi(3));
+			finedFib.findFibonachi(5);
 		}
 }
